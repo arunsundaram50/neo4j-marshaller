@@ -11,7 +11,7 @@ pip install neo4j_marshaller
 ```
 
 
-### Here’s a simple example of how you might use neo4j_marshaller:
+### Here’s a simple example of how you might use `neo4j_marshaller`:
 
 ```python
 from neo4j_marshaller import Neo4JMarshallerResource
