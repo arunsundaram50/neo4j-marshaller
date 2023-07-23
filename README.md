@@ -6,7 +6,7 @@ The idea is to
 
 
 ### Here is the GitHub repo:
-- <https://github.com/arunsundaram50/neo4j_marshaller>
+- <https://github.com/arunsundaram50/neo4j-marshaller>
 
 
 ### Here is the pip command to install it:
