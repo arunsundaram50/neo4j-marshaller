@@ -3,6 +3,8 @@
 The idea is to 
 - avoid the boiler-plate code that has to "interpret" the returned `BoltResultSet` in-order to use the results
 - easily supply named parameters in the Cypher Query
+- `get_one()`: pick one row from returned `BoltResultSet` and return it as an object
+- `get_all()`: treat the `BoltResultSet` and return it as an array 
 
 
 ### Here is the GitHub repo:
@@ -11,7 +13,7 @@ The idea is to
 
 ### Here is the pip command to install it:
 ```
-pip install neo4j_marshaller
+pip install neo4j-marshaller
 ```
 
 
