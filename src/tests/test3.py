@@ -15,6 +15,10 @@ if __name__ == "__main__":
       MATCH (u:ExplUser {name: $username})
       RETURN u
     """
+  dir_list_query = """
+      MATCH (d:ExplDir)
+      RETURN d LIMIT 10
+    """
 
   nm = Neo4JMarshaller()
   with nm.getSession() as sess:
@@ -23,10 +27,7 @@ if __name__ == "__main__":
     json.dump(userJson, indent=2, fp=sys.stdout)
     
     print('-'*80)
-    dirListJson = get_all(sess, """
-      MATCH (d:ExplDir)
-      RETURN d LIMIT 10
-    """)
+    dirListJson = get_all(sess, dir_list_query)
     json.dump(dirListJson, indent=2, fp=sys.stdout)
   
   nm.close()
